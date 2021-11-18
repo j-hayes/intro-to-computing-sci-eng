@@ -1,5 +1,49 @@
 # Module 2: "The computer doesn’t speak English (French, Mandarain, German, Spanish...)" or Introduction to writing code  
 
+- [Module 2: "The computer doesn’t speak English (French, Mandarain, German, Spanish...)" or Introduction to writing code](#module-2-the-computer-doesnt-speak-english-french-mandarain-german-spanish-or-introduction-to-writing-code)
+  - [Terms and Definitions For the Basics of Programming](#terms-and-definitions-for-the-basics-of-programming)
+    - [Syntax:](#syntax)
+    - [File Structure](#file-structure)
+    - [Types:](#types)
+    - [Input output](#input-output)
+    - [Comments](#comments)
+    - [Namespace](#namespace)
+    - [Functions and Parameters](#functions-and-parameters)
+  - [Pseudocode](#pseudocode)
+  - [Libraries](#libraries)
+    - [<span style="color:#ff9c19; font-weight:bold">Don't Reinvent the Wheel</span>](#dont-reinvent-the-wheel)
+  - [A final thought before diving into real code](#a-final-thought-before-diving-into-real-code)
+  - [Hello World](#hello-world)
+    - [C](#c)
+    - [C++](#c-1)
+    - [C](#c-2)
+    - [Python](#python)
+    - [Julia](#julia)
+    - [Comparison](#comparison)
+  - [Exercise 1](#exercise-1)
+  - [Variables](#variables)
+  - [State](#state)
+  - [Arithmetic](#arithmetic)
+    - [Integer Division](#integer-division)
+    - [Integer Division Remainder](#integer-division-remainder)
+    - [Float Division by an integer](#float-division-by-an-integer)
+    - [Number to a power](#number-to-a-power)
+    - [Order Of  Operations](#order-of--operations)
+  - [Exercise](#exercise)
+  - [Using user input](#using-user-input)
+  - [Boolean Logic and Conditional Application Flow](#boolean-logic-and-conditional-application-flow)
+  - [Error Handling](#error-handling)
+  - [Repeating an Operation](#repeating-an-operation)
+  - [Functions](#functions)
+  - [Scope](#scope)
+    - [local function variable](#local-function-variable)
+    - [private class field or function](#private-class-field-or-function)
+    - [protected class field or function](#protected-class-field-or-function)
+    - [public class field or function](#public-class-field-or-function)
+    - [static](#static)
+  - [Combining all of these concepts](#combining-all-of-these-concepts)
+  - [Unit Testing](#unit-testing)
+
 ## Terms and Definitions For the Basics of Programming
 
 Before we dive into our first program we will write, it is important to get a few terms defined. 
@@ -7,6 +51,8 @@ Before we dive into our first program we will write, it is important to get a fe
 ### Syntax:
 Just as a spoken lanugage has syntax, so does a computer programming language. The rules are just as strict for communicating properly. I cannot stress this highly enought, a computer can only understand machine code (a topic for later.) But a short description for now is that a computer can, using a program called a compiler (or other similar concepts) turn the text of a program written in a programming language and convert it to machine code. **If any of the code does not conform to the rules of the programming language that process will fail and you will not be able to run your code.**  At the end of the module there are examples of the programs that won't work because of "syntax errors". 
 
+### File Structure
+The idea of things needing to be in the proper place in the proper format can also extend to files and folders. Often for programs to run successfully, certain files (especially configuration files) need to be in certain places on the computer. One of the main frustrations for new programmers is the amount of setup and configuration is often required to get started. Luckily installer tools and scripts have come a long way, most of the time for the most popular programming languages you should be able to run a simple installer and everything just works. As you get into more advanced concepts, like programming frameworks, deploying to remote servers, etc. the location and format of files including 
 ### Types:
 The world of computing is centered around modeling processes or ideas from the real world (and abstract concepts from our imaginations). Speaking generally (and also in the language of object-oriented programming) there are "Classes" of things. For example if we look at the following list of concepts / ideas, which would be grouped together? 
 
@@ -18,12 +64,12 @@ The world of computing is centered around modeling processes or ideas from the r
 - The number pi 
 - The latitude and longitude of a location 
 - A person's first name, last name, and their day of the month they were born on
-- A list of the scores a student recieved on their exams for a semester. 
+- A list of the scores a student received on their exams for a semester. 
 
 The correct grouping are as follows: 
 - The letter a is a character, the word boggle is a list of characters. A list of characters is often called a string. 
-- The numbers are all numbers, there are two main ways of representing numbers that matter right away in programming. There are integers, i.e. whole numbers (e.g. ... -1, 0, 1, ... ) and non-whole numbers, numbers with fractional integer values (e.g. 101.132). (Irational and complex numbers are a topic for later.) In most languages the integers are call integers (often abbreviated int) and the non-whole numbers are called floating point numbers (i.e. the decimal place can move around in the number.) There are different types of these numbers depending how big of a number is allowed to be represented by the type (more on this later.) 
-- False, this is what is called a boolean, there are two differnet possible values false (represented in the computer as a 0) and true (represented in the computer as a 1). Boolean values and boolean logic are incredibly important in controlling the flow of your programming "condidionally" (e.g. depending on the values passed to the program)  
+- The numbers are all numbers, there are two main ways of representing numbers that matter right away in programming. There are integers, i.e. whole numbers (e.g. ... -1, 0, 1, ... ) and non-whole numbers, numbers with fractional integer values (e.g. 101.132). (Irrational and complex numbers are a topic for later.) In most languages the integers are call integers (often abbreviated int) and the non-whole numbers are called floating point numbers (i.e. the decimal place can move around in the number.) There are different types of these numbers depending how big of a number is allowed to be represented by the type (more on this later.) 
+- False, this is what is called a boolean, there are two different possible values false (represented in the computer as a 0) and true (represented in the computer as a 1). Boolean values and boolean logic are incredibly important in controlling the flow of your programming "conditionally" (e.g. depending on the values passed to the program)  
 - Another grouping would be the list of scores and the word boggle, as they are both lists of a given type, one numbers the other characters. 
 - Another grouping would be the person's information and the latitude and longitude of a location. These are themselves groupings of multiple different properties represented by simple types (strings for the names and a numbers for the day and the lat/long). These are often called composite types or classes. (Specific instances are usually called objects) 
 
@@ -41,6 +87,8 @@ Part of this module is getting familiarity with how to use types in specific lan
 ### Input output
 
 Input output (or IO) is the concept of getting data into and out of the program. The first type you will be exposed to (in our first example) is reading to and writing from the console. It is also used for writing to and reading from a file. 
+
+For almost all of this tutorial we will be using what are known as "Command Line Applications." The user interface (the means by which the user and a computer system interact) for our applications will be the command line. This is in contrast to graphical user interfaces (GUIs), which are the computer programs most of us are familiar with. We will be using a IDE to write our code and run it often, but the IDE is just executing command line commands for us. 
 
 ### Comments
 Most programming languages allow you to specify areas of the code that you want the computer to ignore. This is where you can document and annotate the code. Some common ways of expressing this are the symbols: 
@@ -74,6 +122,21 @@ Pseudocode is example code written to communicate the ideas of an algorithm or p
 
 In this tutorial, if the code is not specified to be a specific language, it can assumed to be c style pseudocode (likely close to c# as it is my preferred general purpose language). 
 
+## Libraries 
+
+A library is a set of functions and types which can be used by a other code. Most languages provide a standard set of libraries to do common programming tasks. 
+
+### <span style="color:#ff9c19; font-weight:bold">Don't Reinvent the Wheel</span>
+
+Before you try to implement custom code to do something, see if there isn't an existing library to do that. If they are by the creators of the language or maintained by an open source community they will likely be more robust and better performing than what you might write.
+
+ Some examples of things that likely already exist for any language you are using: 
+- Input/Output
+- Math functions
+- Sorting Data
+- Filtering Data
+
+While there may not be a library to do exactly what you want to do 
 ## A final thought before diving into real code
 Before you sit down to write code, from the first time you program until your very last day you should always start with what you want to happen then move on to the specifics of how to make it happen in code. 
 
@@ -112,10 +175,11 @@ Close but still slightly different
 using System;                         //include the library io stream
 class App                             //define the class App
 {                                     //start the code for class App   
-  public static void Main()           //define the function Main, static can be called without instantiating the class, void returns nothing
-  {                                   //start the main function
+  //define the public function Main, public means availing for use outside the class, static can be called without instantiating the class, void returns nothing,
+  public static void Main() 
+  {                                   //start the code of main function
     Console.WriteLine("Hello World!");// use Console.WriteLine from System namespace to print Hello World! to output  
-  }                                   // end the Main function
+  }                                   // end the Main function code
 }                                     // end the App Class code 
 ```
 
@@ -141,6 +205,9 @@ All of these accomplished the same thing, but the syntax, necessary code, and fu
 
 ## Variables
 Specific values 
+
+## State
+The state of an application is the concept that certain variables in a function, module, class, application, etc. have specific values. Some programming models are described as stateless (i.e. the larger application does not store state, only individual variables in a function have state). This concept will be explored further in [Module X - Insert link later]()
 
 ## Arithmetic  
  
@@ -250,9 +317,13 @@ public class Program
 	}
 }
 ```
-result : 
+
+result\:
+```
 -99
 -99
+```
+
 
 ## Exercise
 - Run the above on your computer 
@@ -275,3 +346,29 @@ public class Program
 ```  
 </details>
 
+## Using user input
+
+## Boolean Logic and Conditional Application Flow
+
+## Error Handling
+
+## Repeating an Operation 
+
+## Functions
+
+## Scope
+Scope is the availability of a variable, class, function.
+
+We will go from least accessible to most accessible. 
+The following examples are using c style nomenclature (specifically c#) but the concepts are similar in other languages  
+
+### local function variable
+### private class field or function
+### protected class field or function 
+### public class field or function
+### static 
+
+
+## Combining all of these concepts 
+
+## Unit Testing 
