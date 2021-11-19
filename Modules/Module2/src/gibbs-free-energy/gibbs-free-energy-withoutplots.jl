@@ -24,8 +24,6 @@ function readFunctionChoice()
     println("Spontenaity Temperature Range: STR")
     println("Calculate Gibbs Free Energy: GFE")
     println("Calculate Equillibrium Constant: EQC")
-    println("Plot Gibbs Free Energy At Temperature Range: PGT")
-
     
     println("exit: EXIT")
     print("Your Choice: ") 
