@@ -43,6 +43,9 @@ function temperatureRangeSolver()
     elseif !ΔHPositive  && ΔSPositive
         println("Reaction is spontaneous at any temperature")
     else 
+        if ΔS == 0
+            prinln(getDivideByZeroErrorMessage())
+        end  
         equillibriumTemperature = ΔH / ΔS 
         println("Equllibrium Temperature: $(equillibriumTemperature) K")
         greaterThanOrLessThan = ""
@@ -97,6 +100,9 @@ function getThermodynamicValues()
 
 end
 
+function getDivideByZeroErrorMessage()
+    println("https://www.amazon.com/photos/shared/C0TKlZEbRdSsoz4nfCss0A.4jaAmCVpQFo4k-8OuntBTn")
+end
 
 
 main()
