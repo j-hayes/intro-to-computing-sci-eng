@@ -7,8 +7,8 @@ Important Best Practices will be in bold orange text
 
 # Modules
 
-##  Module 1: Introduction and Computer Setup   
-##  Module 2: "The computer doesn’t speak English" or Introduction to writing code  
+##  [Module 1: Introduction and Computer Setup](./Modules/Module1/README.md)   
+##  [Module 2: "The computer doesn’t speak English" or Introduction to writing code](.//Module2/README.md)   
 ##  Module 3: "Tools of the trade and learning how to learn"  
 ##  Module 4: "I don't want to have to do that by hand again" or Scripting
 ##  Module 5: "Why is this function 20,000 lines long?" or Software Engineering Best Practices   

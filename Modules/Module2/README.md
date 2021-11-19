@@ -1,5 +1,7 @@
 # Module 2: "The computer doesn’t speak English (French, Mandarain, German, Spanish...)" or Introduction to writing code  
 
+Table Of Contents:
+
 - [Module 2: "The computer doesn’t speak English (French, Mandarain, German, Spanish...)" or Introduction to writing code](#module-2-the-computer-doesnt-speak-english-french-mandarain-german-spanish-or-introduction-to-writing-code)
   - [Terms and Definitions For the Basics of Programming](#terms-and-definitions-for-the-basics-of-programming)
     - [Syntax:](#syntax)
