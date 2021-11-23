@@ -3,7 +3,8 @@ deltaS = -.1983
 T = 300 
 
 gibbsFreeEnergy = deltaH - T*deltaS
+gibbsFreeEnergy2 = -93.2 - (300*-.1983)
 
-println("Gibbs Free Energy:")
-println("$gibbsFreeEnergy kJ/mol")
+print("Gibbs Free Energy: ")
+print("$gibbsFreeEnergy2 kJ/mol")
 

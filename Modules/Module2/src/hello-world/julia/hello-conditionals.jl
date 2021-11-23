@@ -3,11 +3,11 @@ print("Enter ΔH in kJ/mol: ")
 print("Enter ΔS in kJ/(mol*K): ")
 ΔS = tryparse(Float64, readline())
 
-ΔSPositive = ΔS > 0 # BOOLEAN VALUE (TRUE OR FASE)
+ΔSPositive = ΔS > 0 # BOOLEAN VALUE (TRUE OR FALSE)
 ΔHPositive = ΔH > 0
 
 
-if ΔHPositive  && !ΔSPositive
+if ΔHPositive && !ΔSPositive
     println("Reaction is not spontaneous at any temperature")
 elseif !ΔHPositive  && ΔSPositive
     println("Reaction is spontaneous at any temperature")

@@ -1,14 +1,14 @@
 # Computer Computational Skills for Scientists and Engineering 
 An introduction to programming for Scientists and Engineers with focus on Good Foundations, Clean Code, Mathematics, and Tools for Further Learning 
 
-Important Best Practices will be in bold orange text 
+Important Best Practices will be in bold text 
 
-<span style="color:#ff9c19; font-weight:bold">Every module, class or function in a computer program should have responsibility over a single part of that program's functionality, and it should encapsulate that part. All of that module, class or function's services should be narrowly aligned with that responsibility.[[1]](#1)</span>
+**Every module, class or function in a computer program should have responsibility over a single part of that program's functionality, and it should encapsulate that part. All of that module, class or function's services should be narrowly aligned with that responsibility.[[1]](#1)**
 
 # Modules
 
 ##  [Module 1: Introduction and Computer Setup](./Modules/Module1/README.md)   
-##  [Module 2: "The computer doesn’t speak English" or Introduction to writing code](.//Module2/README.md)   
+##  [Module 2: "The computer doesn’t speak English" or Introduction to writing code](./Modules/Module2/README.md)   
 ##  Module 3: "Tools of the trade and learning how to learn"  
 ##  Module 4: "I don't want to have to do that by hand again" or Scripting
 ##  Module 5: "Why is this function 20,000 lines long?" or Software Engineering Best Practices   

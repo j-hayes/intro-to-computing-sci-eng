@@ -128,7 +128,7 @@ In this tutorial, if the code is not specified to be a specific language, it can
 
 A library is a set of functions and types which can be used by a other code. Most languages provide a standard set of libraries to do common programming tasks. 
 
-### <span style="color:#ff9c19; font-weight:bold">Don't Reinvent the Wheel</span>
+### Don't Reinvent the Wheel
 
 Before you try to implement custom code to do something, see if there isn't an existing library to do that. If they are by the creators of the language or maintained by an open source community they will likely be more robust and better performing than what you might write.
 
@@ -347,6 +347,8 @@ public class Program
 }  
 ```  
 </details>
+
+Note for the rest of this module the rest of the examples 
 
 ## Using user input
 

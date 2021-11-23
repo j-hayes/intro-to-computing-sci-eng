@@ -36,10 +36,31 @@ Wow that codebase is beautiful.
 My code is not compiling. 
 That code should really be open-source. 
 
-## we have it really easy in the 21st century: a very brief history of computing  
+## We have it really easy in the 21st century: a very brief history of computing  
 TODO
 
 ## Command line basics (cmd/unix shell/powershell/etc.) 
+
+Basic Commands:
+Change Directory
+
+```
+cd ./theDirector
+
+```
+
+List Contents of Directory
+Make a Directory 
+Make a file
+Delete a file
+Remove a Directory 
+Remove a directory and all its contents 
+Execute a file 
+Edit a file
+
+```
+cd 
+```
 
 Exercises 
 - Navigating the file structure 
