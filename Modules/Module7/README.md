@@ -14,6 +14,6 @@
 - Iteratively solve an equation with more unknowns than equations 
 - Iteratively solve a PDE 
 - Iterate a function to see patterns
-  - Logistics map (Chaos from a simple equation)  
+  - Logistics map (Chaos from a simple equation)  https://github.com/jonnyhyman/Chaos
 
 ## todo more detail
