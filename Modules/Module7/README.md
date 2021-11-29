@@ -13,5 +13,7 @@
 - Solve a ODE/PDE with Mathematica 
 - Iteratively solve an equation with more unknowns than equations 
 - Iteratively solve a PDE 
+- Iterate a function to see patterns
+  - Logistics map (Chaos from a simple equation)  
 
 ## todo more detail
